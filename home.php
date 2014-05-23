@@ -12,39 +12,51 @@
 					</div>
 				</div>
 			</div>
+			<?php
+				$query = new WP_Query(array('post_type'=>'testimonial', 'posts_per_page'=>10));
+				if($query->have_posts()):
+			?>
 			<div class="row banner-bottom">
 				<div class="col-xs-12">
-					<div class="testimonial-slider">
+					<?php
+						$query = new WP_Query(array('post_type'=>'testimonial', 'posts_per_page'=>6));
+					?>
+					<div class="slider-container">
 						<div class="testimonial">
-							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<div id="testimonial-slider" class="carousel slide" data-ride="carousel">
 							  <!-- Indicators -->
 							  <ol class="carousel-indicators">
-							    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							  	<?php 
+							  	$indicatorIndex = 0;
+							  	$indicatorActive = true;
+							  	while($query->have_posts()): $query->the_post(); ?>
+							    <li data-target="#testimonial-slider" data-slide-to="<?= $indicatorIndex; ?>" <?= ($indicatorActive) ? 'class="active"' : ''; ?>></li>
+								  <?php
+								  $active = false;
+								  $indicatorIndex++;
+								  endwhile; ?>
 							  </ol>
 
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
-							    <div class="item active">
-							    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							  	<?php
+							  	$innerActive = true;
+							  	while($query->have_posts()): $query->the_post();
+							  	?>
+							    <div class="item <?= ($innerActive) ? 'active' : ''; ?>">
+							    	<?php the_content(); ?>
 							    </div>
-							    <div class="item">
-							    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							    </div>
-							    <div class="item">
-							    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							    </div>
-							    <div class="item">
-							    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							    </div>
+							    <?php
+							    $innerActive = false;
+							    endwhile;
+							    ?>
 							  </div>
 
 							  <!-- Controls -->
-							  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+							  <a class="left carousel-control" href="#testimonial-slider" data-slide="prev">
 							    <span class="glyphicon glyphicon-chevron-left"></span>
 							  </a>
-							  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+							  <a class="right carousel-control" href="#testimonial-slider" data-slide="next">
 							    <span class="glyphicon glyphicon-chevron-right"></span>
 							  </a>
 							</div>
@@ -74,6 +86,7 @@
 					</div>
 				</div>
 			</div>
+			<?php endif; //if($query->have_posts()) ?>
 		</div>
 	</div>
 </section>
