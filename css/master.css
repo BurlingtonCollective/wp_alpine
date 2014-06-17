@@ -6411,13 +6411,10 @@ footer {
   min-height: 298px;
 }
 section .interior-container {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
-  margin-top: 40px;
-  padding: 0 20px;
-}
-section .interior-container .page-header {
-  margin-top: 20px;
+  margin-top: 0px;
+  padding: 20px 20px 0px 20px;
 }
 section .interior-container .help-field {
   margin-bottom: 0px;
@@ -6433,4 +6430,11 @@ section .interior-container .how-can-we-help {
 }
 section .interior-container .panel-group {
   margin-top: 20px;
+}
+section .container .page-header {
+  margin: 40px -15px 20px -15px;
+}
+section .container .page-header h1 {
+  color: #fccd48;
+  line-height: 1;
 }

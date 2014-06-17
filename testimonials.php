@@ -5,7 +5,7 @@ Template Name: Testimonial Page
 get_header();
 ?>
 <section>
-	<div class="container interior-container">
+	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="page-header">
@@ -13,6 +13,8 @@ get_header();
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container interior-container">
 		<div class="row">
 			<div class="col-xs-7">
 				<?php
