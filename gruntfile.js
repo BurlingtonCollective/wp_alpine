@@ -1,16 +1,18 @@
 module.exports = function(grunt){
 	grunt.initConfig({
 		less: {
-			options: {
-				compress: true,
-				yuicompress: true
-				// sourceMap: true,
-				// sourceMapFilename: 'css/master.css.map',
-				// sourceMapUrl: '/css/master.css.map',
-				// sourceMapRootPath: '/'
-			},
-			files: {
-				"css/master.css": "css/master.less"
+			development: {
+				options: {
+					yuicompress: true,
+					paths: ["css"]
+					// sourceMap: true,
+					// sourceMapFilename: 'css/master.css.map',
+					// sourceMapUrl: '/css/master.css.map',
+					// sourceMapRootPath: '/'
+				},
+				files: {
+					"css/master.css": "css/master.less"
+				}
 			}
 		},
 		watch: {
@@ -19,7 +21,7 @@ module.exports = function(grunt){
 					livereload: true
 				},
 				files: ['css/**/*.less'],
-				tasks: ['less']
+				tasks: ['less:development']
 			}
 		}
 	});
