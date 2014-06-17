@@ -2,147 +2,114 @@
 <section id="home-banner">
 	<div class="jumbotron">
 		<div class="container">
-			<div class="row banner-top">
+			<div class="row">
 				<div class="col-xs-12">
-					<h1>Alpine Amusement</h1>
-					<h3>Casino themed parties available throughout New England</h3>
-					<div class="btn-group btn-group-lg">
-						<a class="btn btn-default" href="tel:+18888888888">(888) 888-8888</a>
-						<a class="btn btn-primary" href="contact_us.html">Contact Us</a>
+					<div class="inner">
+						<h2>Casino themed parties available throughout New England</h2>
+						<?php
+							$query = new WP_Query(array('post_type'=>'testimonial', 'posts_per_page'=>6));
+							if($query->have_posts()):
+						?>
+						<div id="testimonial-slider" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<?php
+						  	$innerActive = true;
+						  	while($query->have_posts()): $query->the_post();
+						  	$raw_state = types_render_field("state", array( ));
+						  	$raw_state = strtolower($raw_state);
+						  	$fixed_state = preg_replace("/[\s_]/", "-", $raw_state);
+						  	$category = wp_get_post_terms($post->ID, 'testimonial-category', array('fields'=>'names'));
+						  	error_log($category[0]);
+						  	?>
+						    <div class="item <?= ($innerActive) ? 'active' : ''; ?>">
+						    	<p><?php the_title(); echo ' - ' . $category[0]; ?>
+						    	<div class="content">
+						    		<?php the_excerpt(); ?>
+						    	</div>
+						    	<div class="map sprite sprite-<?= $fixed_state; ?>"></div>
+						    </div>
+						    <?php
+						    $innerActive = false;
+						    endwhile;
+						    ?>
+							</div>
+							<!-- Controls -->
+						  <a class="left carousel-control" href="#testimonial-slider" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left"></span>
+						  </a>
+						  <a class="right carousel-control" href="#testimonial-slider" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right"></span>
+						  </a>
+						</div>
+						<?php endif; ?>
+						<ol class="carousel-indicators clearfix">
+					  	<?php 
+					  	$indicatorIndex = 0;
+					  	$indicatorActive = true;
+					  	while($query->have_posts()): $query->the_post(); ?>
+					    <li class="col-md-2" data-target="#testimonial-slider" data-slide-to="<?= $indicatorIndex; ?>" <?= ($indicatorActive) ? 'class="active"' : ''; ?>>
+				    		<?php the_post_thumbnail('full', array(
+					    		// 'src' => $src,
+					    		// 'class' => 'img-responsive',
+					    		// 'alt' => trim(strip_tags($wp_postmeta->_wp_attachement_image_alt))
+						    )); ?>
+						  </li>
+						  <?php
+						  $active = false;
+						  $indicatorIndex++;
+						  endwhile; ?>
+					  </ol>
 					</div>
 				</div>
 			</div>
-			<?php
-				$query = new WP_Query(array('post_type'=>'testimonial', 'posts_per_page'=>10));
-				if($query->have_posts()):
-			?>
-			<div class="row banner-bottom">
-				<div class="col-xs-12">
-					<?php
-						$query = new WP_Query(array('post_type'=>'testimonial', 'posts_per_page'=>6));
-					?>
-					<div class="slider-container">
-						<div class="testimonial">
-							<div id="testimonial-slider" class="carousel slide" data-ride="carousel">
-							  <!-- Indicators -->
-							  <ol class="carousel-indicators">
-							  	<?php 
-							  	$indicatorIndex = 0;
-							  	$indicatorActive = true;
-							  	while($query->have_posts()): $query->the_post(); ?>
-							    <li data-target="#testimonial-slider" data-slide-to="<?= $indicatorIndex; ?>" <?= ($indicatorActive) ? 'class="active"' : ''; ?>></li>
-								  <?php
-								  $active = false;
-								  $indicatorIndex++;
-								  endwhile; ?>
-							  </ol>
-
-							  <!-- Wrapper for slides -->
-							  <div class="carousel-inner">
-							  	<?php
-							  	$innerActive = true;
-							  	while($query->have_posts()): $query->the_post();
-							  	?>
-							    <div class="item <?= ($innerActive) ? 'active' : ''; ?>">
-							    	<?php the_content(); ?>
-							    </div>
-							    <?php
-							    $innerActive = false;
-							    endwhile;
-							    ?>
-							  </div>
-
-							  <!-- Controls -->
-							  <a class="left carousel-control" href="#testimonial-slider" data-slide="prev">
-							    <span class="glyphicon glyphicon-chevron-left"></span>
-							  </a>
-							  <a class="right carousel-control" href="#testimonial-slider" data-slide="next">
-							    <span class="glyphicon glyphicon-chevron-right"></span>
-							  </a>
-							</div>
-						</div>
-						<div class="logo-bar">
-							<div class="row">
-								<div class="col-xs-2">
-									<img class="img-responsive" src="http://placehold.it/200x100"/>
-								</div>
-								<div class="col-xs-2">
-									<img class="img-responsive" src="http://placehold.it/200x100"/>
-								</div>
-								<div class="col-xs-2">
-									<img class="img-responsive" src="http://placehold.it/200x100"/>
-								</div>
-								<div class="col-xs-2">
-									<img class="img-responsive" src="http://placehold.it/200x100"/>
-								</div>
-								<div class="col-xs-2">
-									<img class="img-responsive" src="http://placehold.it/200x100"/>
-								</div>
-								<div class="col-xs-2">
-									<img class="img-responsive" src="http://placehold.it/200x100"/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<?php endif; //if($query->have_posts()) ?>
 		</div>
 	</div>
 </section>
-<section>
-	<div class= "container">
+<section id="intro">
+	<div class="container">
 		<div class="row">
-			<div class="col-xs-5">
-				<h4>Lorem ipsum dolor sit amet</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>We offer services for all types of events:</p>
-				<ul>
-					<li>Corporate Parties</li>
-					<li>Office Parties</li>
-					<li>Company Events</li>
-					<li>Team Building</li>
-					<li>Fundraisers</li>
-					<li>Weddings</li>
-					<li>Holiday Parties</li>
-					<li>Family Gatherings &amp; Reunions</li>
-        </ul>
+			<div class="col-xs-12 col-sm-10 col-sm-push-1 col-md-6 col-md-push-3">
+				<div class="inner">
+					<h1>Alpine Amusement</h1>
+					<p class="faux-heading">Casino themed parties available throughout New England</p>
+					<p>Alpine Amusement is a Vermont-based professional Las Vegas Casino Night event & entertainment rental company.  Founded by Ron Jacobs, President, in the Mad River Valley Alpine Amusement has been providing Casino Grade equipment to corporate event planners, non-profit organizations, and personal functions in the New England and northern New York region since 1991.</p>
+					<p>Corporate Parties &middot; Office Parties &middot; Company Events &middot; Team Building &middot; Fundraisers &middot; Weddings &middot; Holiday Parties &middot; Family Gatherings</p>
+					<img src="<?= get_stylesheet_directory_uri(); ?>/images/chip-separator.png" class="img-responsive">
+				</div>
 			</div>
-			<div class="col-xs-6 col-xs-push-1">
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		</div>
+	</div>
+</section>
+<section id="home-tertiary">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-8 col-md-push-2">
+				<div id="featured-images" class="carousel slide" data-ride="carousel">
 				  <!-- Indicators -->
 				  <ol class="carousel-indicators">
-				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				    <li data-target="#featured-images" data-slide-to="0" class="active"></li>
+				    <li data-target="#featured-images" data-slide-to="1"></li>
+				    <li data-target="#featured-images" data-slide-to="2"></li>
 				  </ol>
 
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner">
 				    <div class="item active">
-				    	<img class="img-responsive" src="http://placehold.it/800x400">
+				    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/table.jpg">
 				    </div>
 				    <div class="item">
-				    	<img class="img-responsive" src="http://placehold.it/800x400">
+				    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/party1.jpeg">
 				    </div>
 				    <div class="item">
-				    	<img class="img-responsive" src="http://placehold.it/800x400">
-				    </div>
-				    <div class="item">
-				    	<img class="img-responsive" src="http://placehold.it/800x400">
+				    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/maroon-table.jpg">
 				    </div>
 				  </div>
 
 				  <!-- Controls -->
-				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				  <a class="left carousel-control" href="#featured-images" data-slide="prev">
 				    <span class="glyphicon glyphicon-chevron-left"></span>
 				  </a>
-				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				  <a class="right carousel-control" href="#featured-images" data-slide="next">
 				    <span class="glyphicon glyphicon-chevron-right"></span>
 				  </a>
 				</div>
