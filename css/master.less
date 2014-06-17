@@ -5,19 +5,20 @@
 
 @pattern-light-green: #579657;
 @pattern-dark-green: #031003;
-@bg-dark-green: #002B00; //@bg-dark-green
-@bg-light-green: #004000; //@bg-light-green
+@bg-dark-green: #002B00;
+@bg-light-green: #004000;
 @light-yellow: #fce16c;
 @yellow: #FCCD48;
 @red: #bb212e;
-@brand-primary: @yellow;
+@brand-primary: @red;
 @white-text: #f1f1f1;
 @white-alpha: rgba(255,255,255,.6);
 
 @headings-font-family: 'Fjalla One', 'Helvetica Neue', Helvetica, sans-serif;
-@headings-color: @red;
+@headings-color: @yellow;
 
 html{
+	height: 100%;
 	background: @bg-light-green; /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMWIwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMTUwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDFiMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -32,6 +33,9 @@ html{
 	// background: transparent url('../images/bg-pattern.png') left top repeat;
 	body{
 		background: transparent url('../images/bg-pattern.png') left top repeat fixed;
+		min-height: 100%;
+		position: relative;
+		padding-bottom: 338px;
 	}
 }
 
@@ -93,6 +97,31 @@ header{
 				& > li{
 					a{
 						color: @white-text;
+					}
+					&.dropdown{
+						&.open a{
+							background: transparent;
+							color: @white-text;
+						}
+						ul.dropdown-menu{
+							width: 200px;
+							left: 50%;
+							margin-left: -100px;
+							border: 2px solid @yellow;
+							background: @bg-light-green;
+							&:before{
+								width: 0;
+								height: 0;
+								border-left: 5px solid transparent;
+								border-right: 5px solid transparent;
+								border-bottom: 5px solid @yellow;
+								content: ' ';
+								position: absolute;
+								top: -7px;
+								left: 50%;
+								margin-left: -2.5px;
+							}
+						}
 					}
 					&.active{
 						a{
@@ -264,6 +293,9 @@ footer{
 	border: none;
 	background: transparent url('../images/chips-bottom.png') right bottom no-repeat;
 	min-height: 298px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 @import 'template-interior.less';

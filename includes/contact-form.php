@@ -50,7 +50,7 @@ if(isset($_POST['email']) && $_POST['honeypot'] == ''){
 
 ?>
 <form class="form well clearfix">
-	<h3 class="how-can-we-help">Contact Us!</h3>
+	<h3>Contact Us!</h3>
 	<div class="form-group">
 		<label for="name">Name</label>
 		<input type="text" class="form-control" id="name" name="name" placeholder="Joe Smith">

@@ -25,6 +25,7 @@
 						    	<p><?php the_title(); echo ' - ' . $category[0]; ?>
 						    	<div class="content">
 						    		<?php the_excerpt(); ?>
+						    		<a href="<?php the_permalink(); ?>">See More</a>
 						    	</div>
 						    	<div class="map sprite sprite-<?= $fixed_state; ?>"></div>
 						    </div>
@@ -49,9 +50,6 @@
 					  	while($query->have_posts()): $query->the_post(); ?>
 					    <li class="col-md-2" data-target="#testimonial-slider" data-slide-to="<?= $indicatorIndex; ?>" <?= ($indicatorActive) ? 'class="active"' : ''; ?>>
 				    		<?php the_post_thumbnail('full', array(
-					    		// 'src' => $src,
-					    		// 'class' => 'img-responsive',
-					    		// 'alt' => trim(strip_tags($wp_postmeta->_wp_attachement_image_alt))
 						    )); ?>
 						  </li>
 						  <?php
