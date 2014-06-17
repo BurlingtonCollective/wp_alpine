@@ -128,9 +128,9 @@ get_header();
 	    	  </div> 
     	  </div> 
   	  </div>
-      <div class="col-xs-4 col-xs-push-1">
+      <div class="col-xs-4 col-xs-push-1 help-field">
 				<form class="form well clearfix">
-					<h3>How can we help?</h3>
+					<h3 class="how-can-we-help">How can we help?</h3>
 					<div class="form-group">
 						<label for="name">Name</label>
 						<input type="text" class="form-control" id="name" name="name" placeholder="Joe Smith">

@@ -6410,3 +6410,27 @@ footer {
   background: transparent url('../images/chips-bottom.png') right bottom no-repeat;
   min-height: 298px;
 }
+section .interior-container {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+section .interior-container .page-header {
+  margin-top: 20px;
+}
+section .interior-container .help-field {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+section .interior-container .panel a {
+  display: block;
+  text-decoration: none;
+}
+section .interior-container .how-can-we-help {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+section .interior-container .panel-group {
+  margin-top: 20px;
+}
