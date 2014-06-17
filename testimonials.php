@@ -13,6 +13,8 @@ get_header();
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container interior-container">
 		<div class="row">
 			<div class="col-xs-7">
 				<?php

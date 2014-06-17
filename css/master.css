@@ -6422,3 +6422,31 @@ footer {
   background: transparent url('../images/chips-bottom.png') right bottom no-repeat;
   min-height: 298px;
 }
+section .interior-container {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  margin-top: 0px;
+  padding: 20px 20px 0px 20px;
+}
+section .interior-container .help-field {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+section .interior-container .panel a {
+  display: block;
+  text-decoration: none;
+}
+section .interior-container .how-can-we-help {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+section .interior-container .panel-group {
+  margin-top: 20px;
+}
+section .container .page-header {
+  margin: 40px -15px 20px -15px;
+}
+section .container .page-header h1 {
+  color: #fccd48;
+  line-height: 1;
+}
