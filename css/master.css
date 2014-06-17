@@ -6215,7 +6215,7 @@ html body {
   padding-bottom: 338px;
 }
 .btn.btn-primary {
-  color: #002b00;
+  color: #fff;
 }
 header {
   background: transparent url('../images/chips-top.png') left top no-repeat;
@@ -6508,4 +6508,7 @@ section .container.interior article.post .content h4 {
 }
 section .container.interior #testimonial-subnav h4 {
   margin-top: 0;
+}
+section .container.interior .form h3 {
+  color: #bb212e;
 }
