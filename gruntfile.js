@@ -4,7 +4,8 @@ module.exports = function(grunt){
 			development: {
 				options: {
 					yuicompress: true,
-					paths: ["css"]
+					paths: ["css"],
+					livereload: true
 					// sourceMap: true,
 					// sourceMapFilename: 'css/master.css.map',
 					// sourceMapUrl: '/css/master.css.map',

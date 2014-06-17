@@ -6397,6 +6397,18 @@ section#intro .inner img {
 section#home-tertiary {
   padding-top: 88px;
 }
+section#home-tertiary #featured-images .carousel-inner {
+  background: black;
+  -webkit-transition: height 0.2s;
+  transition: height 0.2s;
+  border-radius: 4px;
+}
+section#home-tertiary #featured-images .carousel-inner .item {
+  text-align: center;
+}
+section#home-tertiary #featured-images .carousel-inner .item img {
+  margin: 0 auto;
+}
 div.stretch {
   height: 400px;
   background: red;
