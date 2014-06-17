@@ -5,7 +5,6 @@ $(function(){
 	$('.carousel-indicators [data-target="#testimonial-slider"]').first().addClass('active');
 	$('.carousel')
 		.on('slide.bs.carousel', function(e){
-			console.log('heyo');
 			var newHeight = $(e.relatedTarget).height();
 			$(this).find('.item.active').parent().animate({
 				'height': newHeight
