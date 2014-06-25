@@ -6217,6 +6217,11 @@ html body {
 .btn.btn-primary {
   color: #fff;
 }
+ul.plain {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 header {
   background: transparent url('../images/chips-top.png') left top no-repeat;
   min-height: 298px;
@@ -6243,7 +6248,7 @@ header nav.navbar #extra-menu {
   background: #bb212e;
   border-radius: 0 0 4px 4px;
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
 }
 header nav.navbar #extra-menu .social {
   height: 12px;
@@ -6329,11 +6334,14 @@ section#home-banner .jumbotron .inner {
   }
 }
 section#home-banner .jumbotron .inner h2 {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   color: #fccd48;
 }
 section#home-banner .jumbotron .inner .logo-bar {
   padding-top: 40px;
+}
+section#home-banner .jumbotron .inner #testimonial-slider {
+  margin-bottom: 40px;
 }
 section#home-banner .jumbotron .inner #testimonial-slider .carousel-inner > .item {
   -webkit-box-sizing: border-box;
@@ -6405,11 +6413,9 @@ section#intro {
   border-width: 4px 0;
   background: #f1f1f1 url('../images/cards.png') left top no-repeat;
 }
-section#intro .inner {
-  text-align: center;
-}
 section#intro .inner h1 {
   font-size: 46px;
+  color: #bb212e;
 }
 section#intro .inner .faux-heading {
   display: inline-block;
@@ -6421,19 +6427,28 @@ section#intro .inner img {
   margin: 0 auto;
   padding: 20px 0;
 }
+section#intro .carousel-wrapper {
+  padding: 20px 0;
+}
+section#intro .separator-wrapper {
+  padding: 20px 0;
+}
+section#intro .separator-wrapper img {
+  margin: 0 auto;
+}
 section#home-tertiary {
   padding-top: 88px;
 }
-section#home-tertiary #featured-images .carousel-inner {
+#featured-images .carousel-inner {
   background: black;
   -webkit-transition: height 0.2s;
   transition: height 0.2s;
   border-radius: 4px;
 }
-section#home-tertiary #featured-images .carousel-inner .item {
+#featured-images .carousel-inner .item {
   text-align: center;
 }
-section#home-tertiary #featured-images .carousel-inner .item img {
+#featured-images .carousel-inner .item img {
   margin: 0 auto;
 }
 div.stretch {
@@ -6452,8 +6467,23 @@ footer {
   bottom: 0;
   width: 100%;
 }
+footer ul.plain {
+  color: #fff;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  font-size: 12px;
+  margin-top: 160px;
+}
+footer ul.plain a {
+  color: #fccd48;
+}
+footer ul.plain a:hover {
+  color: #fff;
+}
 section .container .page-header {
-  margin: 40px -15px 20px -15px;
+  margin: 0px -15px 20px -15px;
+  padding-top: 40px;
+  background: transparent url('../images/LVsilhouette.png') right bottom no-repeat;
 }
 section .container .page-header h1 {
   color: #fccd48;
@@ -6464,6 +6494,7 @@ section .container.interior {
   border-radius: 4px;
   margin-top: 0px;
   padding: 20px;
+  font-size: 1.3em;
 }
 section .container.interior h3 {
   margin-top: 0;
