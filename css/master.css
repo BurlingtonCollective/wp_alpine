@@ -6223,7 +6223,7 @@ ul.plain {
   padding: 0;
 }
 header {
-  background: transparent url('../images/chips-top.png') left top no-repeat;
+  background: transparent url('../images/chips-top-alt.png') left top no-repeat;
   min-height: 298px;
 }
 header .navbar-header a.navbar-brand {
@@ -6461,7 +6461,7 @@ footer {
   background: transparent none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   border: none;
-  background: transparent url('../images/chips-bottom.png') right bottom no-repeat;
+  background: transparent url('../images/chips-bottom-alt.png') right bottom no-repeat;
   min-height: 298px;
   position: absolute;
   bottom: 0;
@@ -6488,6 +6488,7 @@ section .container .page-header {
 section .container .page-header h1 {
   color: #fccd48;
   line-height: 1;
+  text-shadow: 0px 0px 20px #002b00;
 }
 section .container.interior {
   background: rgba(255, 255, 255, 0.6);

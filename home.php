@@ -44,7 +44,7 @@
 						  </a>
 						</div>
 						<?php endif; ?>
-						<ol class="carousel-indicators clearfix">
+						<ol class="carousel-indicators">
 					  	<?php 
 					  	$indicatorIndex = 0;
 					  	$indicatorActive = true;
@@ -58,6 +58,22 @@
 						  $indicatorIndex++;
 						  endwhile; ?>
 					  </ol>
+					  <div id="extra-logos">
+					  	<div class="row">
+					  		<div class="col-xs-3">
+					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/middleburyregular-white.png" style="margin: 0 auto;">
+					  		</div>
+					  		<div class="col-xs-3">
+					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-holderness-white.png" style="margin: 0 auto;">
+					  		</div>
+					  		<div class="col-xs-3">
+					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-aig-white.png" style="margin: 0 auto;">
+					  		</div>
+					  		<div class="col-xs-3">
+					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-tilton-white.png" style="margin: 0 auto;">
+					  		</div>
+					  	</div>
+					  </div>
 					</div>
 				</div>
 			</div>
@@ -83,6 +99,9 @@
 					    <li data-target="#featured-images" data-slide-to="0" class="active"></li>
 					    <li data-target="#featured-images" data-slide-to="1"></li>
 					    <li data-target="#featured-images" data-slide-to="2"></li>
+					    <li data-target="#featured-images" data-slide-to="3"></li>
+					    <li data-target="#featured-images" data-slide-to="4"></li>
+					    <li data-target="#featured-images" data-slide-to="5"></li>
 					  </ol>
 
 					  <!-- Wrapper for slides -->
@@ -91,7 +110,16 @@
 					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/table.jpg">
 					    </div>
 					    <div class="item">
+					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/party2.jpg">
+					    </div>
+					    <div class="item">
+					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/table2.jpg">
+					    </div>
+					    <div class="item">
 					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/party1.jpeg">
+					    </div>
+					    <div class="item">
+					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/party3.jpg">
 					    </div>
 					    <div class="item">
 					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/maroon-table.jpg">
