@@ -27,7 +27,7 @@ if (have_posts()) :
 						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 						<div class="excerpt">
 							<?php the_excerpt(); ?>
-							<a href="<?php the_permalink(); ?>">See More</a>
+							<a class="more" href="<?php the_permalink(); ?>">See More</a>
 						</div>
 					</div>
 				</article>

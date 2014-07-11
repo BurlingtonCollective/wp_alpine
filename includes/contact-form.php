@@ -1,4 +1,3 @@
-
 <form class="form well clearfix">
 	<h3>Contact Us!</h3>
 	<div class="alert" style="display:none;"></div>

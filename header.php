@@ -25,6 +25,7 @@
 		    <div id="extra-menu" class="hidden-xs hidden-sm">
 		    	<span>(802) 496-4498</span>
 		    	<a target="_blank" title="Check on Facebook for images from your event!" href="https://www.facebook.com/pages/Alpine-Amusement/205272029675678" class="social facebook"></a>
+		    	<a target="_blank" title="Connect on LinkedIn!" class="social linked_in" href="https://www.linkedin.com/pub/ron-jacobs/70/aa2/611"></a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <?php

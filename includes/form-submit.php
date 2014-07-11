@@ -40,7 +40,7 @@ if(isset($_POST['email'])){
 		$messageString .= "Message: ".$messageFieldValue."\n\n\n";
 		$messageString .= "If you are recieving spam often, contact your friendly neighborhood web developer: zach@burlingtoncollective.com";
 
-		$result = $postmark->to('znlincoln@gmail.com')
+		$result = $postmark->to('ronj@sover.net')
 						->subject($subjectLinePart." via alpineamusement.com")
 						->plain_message($messageString)
 						->send();

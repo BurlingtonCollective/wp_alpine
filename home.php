@@ -60,17 +60,28 @@
 					  </ol>
 					  <div id="extra-logos">
 					  	<div class="row">
-					  		<div class="col-xs-3">
-					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/middleburyregular-white.png" style="margin: 0 auto;">
+					  		<div class="col-xs-12">
+					  			<h5 style="text-align: center;">Previously Partnered With:</h5>
 					  		</div>
-					  		<div class="col-xs-3">
-					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-holderness-white.png" style="margin: 0 auto;">
+					  	</div>
+					  	<div class="row">
+					  		<div class="col-xs-2">
+					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-burton-white.png" style="margin: 0 auto;">
 					  		</div>
-					  		<div class="col-xs-3">
+					  		<div class="col-xs-2">
 					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-aig-white.png" style="margin: 0 auto;">
 					  		</div>
-					  		<div class="col-xs-3">
-					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-tilton-white.png" style="margin: 0 auto;">
+					  		<div class="col-xs-2">
+					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-bcg-white.png" style="margin: 17px auto 0;">
+					  		</div>
+					  		<div class="col-xs-2">
+					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-chevy-white.png" style="margin: 13px auto 0;">
+					  		</div>
+					  		<div class="col-xs-2">
+					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-amr-white.png" style="margin: 22px auto 0;">
+					  		</div>
+					  		<div class="col-xs-2">
+					  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-gsk-white.png" style="margin: 0 auto;">
 					  		</div>
 					  	</div>
 					  </div>
@@ -87,8 +98,8 @@
 				<div class="inner">
 					<h1>Alpine Amusement</h1>
 					<p class="faux-heading">Casino themed parties available throughout New England</p>
-					<p>Alpine Amusement is a Vermont-based professional Las Vegas Casino Night event & entertainment rental company.  Founded by Ron Jacobs, President, in the Mad River Valley Alpine Amusement has been providing Casino Grade equipment to corporate event planners, non-profit organizations, and personal functions in the New England and northern New York region since 1991.</p>
-					<p>Corporate Parties &middot; Office Parties &middot; Company Events &middot; Team Building &middot; Fundraisers &middot; Weddings &middot; Holiday Parties &middot; Family Gatherings</p>
+					<p>Alpine Amusement is a Vermont-based professional Las Vegas Casino Night event &amp; entertainment rental company.  Founded in Vermont, Alpine Amusement has been providing Casino Grade equipment to corporate event planners, non-profit organizations, and personal functions in the New England and northern New York region since 1991.</p>
+					<p>Corporate Parties &middot;  Company Events &middot; Team Building &middot; Fundraisers &middot; Weddings &middot; Holiday Parties &middot; Family Gatherings</p>
 				</div>
 			</div>
 			<div class="col-xs-4 col-xs-push-1">
