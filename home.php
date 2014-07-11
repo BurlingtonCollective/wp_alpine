@@ -36,15 +36,15 @@
 						    ?>
 							</div>
 							<!-- Controls -->
-						  <a class="left carousel-control" href="#testimonial-slider" data-slide="prev">
+						  <a class="hidden-xs hidden-sm left carousel-control" href="#testimonial-slider" data-slide="prev">
 						    <span class="glyphicon glyphicon-chevron-left"></span>
 						  </a>
-						  <a class="right carousel-control" href="#testimonial-slider" data-slide="next">
+						  <a class="hidden-xs hidden-sm right carousel-control" href="#testimonial-slider" data-slide="next">
 						    <span class="glyphicon glyphicon-chevron-right"></span>
 						  </a>
 						</div>
 						<?php endif; ?>
-						<ol class="carousel-indicators">
+						<ol class="carousel-indicators hidden-xs hidden-sm">
 					  	<?php 
 					  	$indicatorIndex = 0;
 					  	$indicatorActive = true;
@@ -58,7 +58,7 @@
 						  $indicatorIndex++;
 						  endwhile; ?>
 					  </ol>
-					  <div id="extra-logos">
+					  <div id="extra-logos" class="hidden-xs hidden-sm">
 					  	<div class="row">
 					  		<div class="col-xs-12">
 					  			<h5 style="text-align: center;">Previously Partnered With:</h5>
@@ -94,7 +94,7 @@
 <section id="intro">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-7">
+			<div class="col-xs-12 col-sm-6 col-md-7">
 				<div class="inner">
 					<h1>Alpine Amusement</h1>
 					<p class="faux-heading">Casino themed parties available throughout New England</p>
@@ -102,7 +102,7 @@
 					<p>Corporate Parties &middot;  Company Events &middot; Team Building &middot; Fundraisers &middot; Weddings &middot; Holiday Parties &middot; Family Gatherings</p>
 				</div>
 			</div>
-			<div class="col-xs-4 col-xs-push-1">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-md-push-1">
 				<div class="carousel-wrapper">
 					<div id="featured-images" class="carousel slide" data-ride="carousel">
 					  <!-- Indicators -->

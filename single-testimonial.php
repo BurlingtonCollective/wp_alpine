@@ -16,7 +16,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 	</div>
 	<div class="container interior">
 		<div class="row">
-			<div class="col-xs-7">
+			<div class="col-xs-12 col-sm-6 col-md-7">
 				<article class="post">
 					<div class="logo">
 						<?php the_post_thumbnail('full', array(
@@ -30,7 +30,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 					</div>
 				</article>
 			</div>
-			<div class="col-xs-4 col-xs-push-1">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-md-push-1">
 				<?php include('includes/testimonial-subnav.php'); ?>
 			</div>
 		</div>

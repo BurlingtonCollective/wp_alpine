@@ -5,6 +5,9 @@ section{
 			padding-top: 40px;
 			// background: transparent url('../images/skyline.png') right 20px no-repeat;
 			background: transparent url('../images/LVsilhouette-alt.png') right bottom no-repeat;
+			@media(max-width: @screen-sm-max){
+				background: transparent;
+			}
 			h1{
 				color: @yellow;
 				line-height: 1;
@@ -57,6 +60,14 @@ section{
 					}
 					a.more{
 						font-size: 12px;
+					}
+				}
+				@media(max-width: @screen-sm-max){
+					.logo{
+						display: none;
+					}
+					.content{
+						padding-left: 0;
 					}
 				}
 			}

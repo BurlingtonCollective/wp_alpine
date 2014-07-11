@@ -17,11 +17,11 @@ if (have_posts()) : while (have_posts()) : the_post();
 	</div>	
 	<div class="container interior">
 		<div class="row">
-			<div class="col-xs-7">
+			<div class="col-xs-12 col-sm-6 col-md-7">
 				<?php the_content(); ?>
 				<?php include('includes/faq-accordion.php'); ?>
   	  </div>
-      <div class="col-xs-4 col-xs-push-1 help-field">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-md-push-1">
 				<?php include('includes/contact-form.php'); ?>
 			</div>
 		</div>

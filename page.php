@@ -14,7 +14,7 @@ if(have_posts()): while(have_posts()): the_post();
 	</div>
 	<div class="container interior">
 		<div class="row">
-			<div class="col-xs-7">
+			<div class="col-xs-12 col-sm-6 col-md-7">
 				<?php the_content(); ?>
 			</div>
 		</div>

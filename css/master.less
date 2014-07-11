@@ -157,6 +157,9 @@ header{
 	@media(min-width: @grid-float-breakpoint){
 		padding-top: 40px;
 	}
+	@media(max-width: @screen-xs-max){
+		background: transparent;
+	}
 }
 
 section#home-banner{
@@ -190,6 +193,12 @@ section#home-banner{
 							position: absolute;
 							right: 0;
 							top:0;
+						}
+						@media(max-width: @screen-sm-max){
+							padding-right: 0;
+							.map{
+								display: none;
+							}
 						}
 					}
 				}

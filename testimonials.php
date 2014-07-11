@@ -16,7 +16,7 @@ get_header();
 	</div>
 	<div class="container interior">
 		<div class="row">
-			<div class="col-xs-7">
+			<div class="col-xs-12 col-sm-6 col-md-7">
 				<?php
 				$query = new WP_Query(array(
 					'post_type'=>'testimonial'
@@ -37,7 +37,7 @@ get_header();
 				endif;
 				?>
 			</div>
-			<div class="col-xs-4 col-xs-push-1">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-md-push-1">
 				<?php include('includes/contact-form.php'); ?>
 			</div>
 		</div>
