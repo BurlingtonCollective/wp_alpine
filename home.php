@@ -61,7 +61,7 @@
 					  <div id="extra-logos" class="hidden-xs hidden-sm">
 					  	<div class="row">
 					  		<div class="col-xs-12">
-					  			<h5 style="text-align: center;">Previously Partnered With:</h5>
+					  			<h5 style="text-align: center;">Representative Clients:</h5>
 					  		</div>
 					  	</div>
 					  	<div class="row">
