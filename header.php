@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Home | Alpine Amusement</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 	<link href="<?= get_template_directory_uri(); ?>/css/master.css?<?= time ( void ); ?>" rel="stylesheet">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
