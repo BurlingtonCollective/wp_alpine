@@ -2,13 +2,19 @@ section{
 	.container{
 		.page-header{
 			.box-sizing(border-box);
-			height: 300px;
-			margin: 0px -15px 20px -15px;
-			padding-top: 40px;
+			height: 117px;
+			margin: 30px -15px 20px -15px;
+			padding-top: 26px;
+			border-top: 1px solid #eeeeee;
 			background: transparent url('../images/vegas2.png') right top no-repeat;
 			// background: transparent url('../images/LVsilhouette-alt.png') right bottom no-repeat;
 			@media(max-width: @screen-sm-max){
 				background: transparent;
+				height: auto;
+				padding: 20px 15px;
+			}
+			@media(max-width: @screen-xs-max){
+				// padding: 26px 15px 0;
 			}
 			h1{
 				color: @yellow;

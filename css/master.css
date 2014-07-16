@@ -6224,12 +6224,14 @@ ul.plain {
 }
 header {
   background: transparent url('../images/chips-top-alt.png') left top no-repeat;
-  min-height: 298px;
 }
 header .navbar-header a.navbar-brand {
   height: auto;
   max-width: 200px;
   padding: 0 15px;
+}
+header .navbar-header .navbar-toggle {
+  margin-top: 33px;
 }
 header nav.navbar {
   margin-bottom: 0;
@@ -6309,12 +6311,39 @@ header nav.navbar #extra-menu .social:before {
     color: #004000;
   }
 }
-header + section {
-  margin-top: -158px;
+@media (max-width: 767px) {
+  header nav.navbar .navbar-nav:last-child {
+    float: none !important;
+  }
+  header nav.navbar .navbar-nav:last-child > li a {
+    color: white;
+    background: transparent;
+  }
+  header nav.navbar .navbar-nav:last-child > li a:hover {
+    color: #bb212e;
+  }
+  header nav.navbar .navbar-nav:last-child > li.dropdown.open a {
+    color: #fff;
+    background: transparent;
+  }
+  header nav.navbar .navbar-nav:last-child > li.active a:hover {
+    background: transparent;
+  }
+  header nav.navbar #main-nav {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+@media (min-width: 768px) {
+  header + section {
+    margin-top: -158px;
+  }
 }
 @media (min-width: 768px) {
   header {
     padding-top: 40px;
+    min-height: 298px;
   }
 }
 @media (max-width: 767px) {
@@ -6497,14 +6526,17 @@ section .container .page-header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 300px;
-  margin: 0px -15px 20px -15px;
-  padding-top: 40px;
+  height: 117px;
+  margin: 30px -15px 20px -15px;
+  padding-top: 26px;
+  border-top: 1px solid #eeeeee;
   background: transparent url('../images/vegas2.png') right top no-repeat;
 }
 @media (max-width: 991px) {
   section .container .page-header {
     background: transparent;
+    height: auto;
+    padding: 20px 15px;
   }
 }
 section .container .page-header h1 {
