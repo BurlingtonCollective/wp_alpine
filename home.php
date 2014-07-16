@@ -36,10 +36,10 @@
 						    ?>
 							</div>
 							<!-- Controls -->
-						  <a class="hidden-xs hidden-sm left carousel-control" href="#testimonial-slider" data-slide="prev">
+						  <a class="left carousel-control" href="#testimonial-slider" data-slide="prev">
 						    <span class="glyphicon glyphicon-chevron-left"></span>
 						  </a>
-						  <a class="hidden-xs hidden-sm right carousel-control" href="#testimonial-slider" data-slide="next">
+						  <a class="right carousel-control" href="#testimonial-slider" data-slide="next">
 						    <span class="glyphicon glyphicon-chevron-right"></span>
 						  </a>
 						</div>
@@ -113,6 +113,7 @@
 					    <li data-target="#featured-images" data-slide-to="3"></li>
 					    <li data-target="#featured-images" data-slide-to="4"></li>
 					    <li data-target="#featured-images" data-slide-to="5"></li>
+					    <li data-target="#featured-images" data-slide-to="6"></li>
 					  </ol>
 
 					  <!-- Wrapper for slides -->
@@ -122,6 +123,9 @@
 					    </div>
 					    <div class="item">
 					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/party2.jpg">
+					    </div>
+					    <div class="item">
+					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/craps.jpg">
 					    </div>
 					    <div class="item">
 					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/table2.jpg">

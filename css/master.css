@@ -6408,6 +6408,20 @@ section#home-banner .jumbotron .inner #testimonial-slider .carousel-control.righ
 section#home-banner .jumbotron .inner #testimonial-slider .carousel-control.left {
   left: -15%;
 }
+@media (max-width: 991px) {
+  section#home-banner .jumbotron .inner #testimonial-slider {
+    padding-bottom: 30px;
+  }
+  section#home-banner .jumbotron .inner #testimonial-slider .carousel-control {
+    top: auto;
+  }
+  section#home-banner .jumbotron .inner #testimonial-slider .carousel-control.right {
+    right: 0;
+  }
+  section#home-banner .jumbotron .inner #testimonial-slider .carousel-control.left {
+    left: 0;
+  }
+}
 section#home-banner .jumbotron .carousel-indicators {
   position: static;
   margin-left: 0;
