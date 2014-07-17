@@ -15,12 +15,10 @@
 								<?php
 						  	$innerActive = true;
 						  	while($query->have_posts()): $query->the_post();
-						  	error_log(print_r($post, true));
 						  	$raw_state = types_render_field("state", array( ));
 						  	$raw_state = strtolower($raw_state);
 						  	$fixed_state = preg_replace("/[\s_]/", "-", $raw_state);
 						  	$category = wp_get_post_terms($post->ID, 'testimonial-category', array('fields'=>'names'));
-						  	error_log($category[0]);
 						  	?>
 						    <div class="item <?= ($innerActive) ? 'active' : ''; ?>">
 						    	<p><?php the_title(); echo ' - ' . $category[0]; ?></p>
