@@ -1,7 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Home | Alpine Amusement</title>
+	<title><?php wp_title('&#124;','true','right'); ?><?php bloginfo('name'); ?></title>
+	<meta name="Description" content="Casino Parties, Theme Nights & Events - serving New England. Alpine Amusement works with corporate event and meeting planners, fundraiser committees and individuals to provide fun and entertainment for all ages. Plan your next event with Alpine Amusement - Casino Parties and Theme Nights with Las Vegas grade equipment.">
+	<meta name="Keywords" content="casino, party, planner, theme, theme party, corporate, events, planning, amusement, Texas, hold em, Las Vegas, night, fundraiser, ideas, fundraising, adult, entertainment,tradeshows, trade, show, rehearsal dinner, rehearsal, dinner, weddings, wedding, Vermont, New Hampshire, Massachusetts, Maine, Rhode Island, New England, black jack, craps, roulette, money wheel, poker">
+	<meta name="Author" content="Zachary Lincoln - burlingtoncollective.com">
+	<meta name="Robots" content="ALL">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 	<link href="<?= get_template_directory_uri(); ?>/css/master.css?<?= time ( void ); ?>" rel="stylesheet">
