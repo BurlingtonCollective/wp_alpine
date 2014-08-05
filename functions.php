@@ -1,7 +1,5 @@
 <?php
 
-define( 'DONOTCACHEPAGE', true );
-
 register_nav_menus(array(
   'primary' => __('Primary Menu', 'WP_ALPINE')
 ));
