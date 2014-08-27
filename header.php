@@ -7,6 +7,7 @@
 	<meta name="Author" content="Zachary Lincoln - burlingtoncollective.com">
 	<meta name="Robots" content="ALL">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="google-site-verification" content="cADrV0Udi4rIUHU4O8DTlCHbz1FXN1IS3HWg092x9X8" />
 	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 	<link href="<?= get_template_directory_uri(); ?>/css/master.css?<?= time ( void ); ?>" rel="stylesheet">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
