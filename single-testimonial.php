@@ -4,7 +4,7 @@ get_header();
 if (have_posts()) : while (have_posts()) : the_post();
 ?>
 
-<section itemscope itemtype="http://schema.org/LocalBusiness">
+<section>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">

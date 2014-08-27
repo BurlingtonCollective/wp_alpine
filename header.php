@@ -14,7 +14,7 @@
 	<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/js/main.js"></script>
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/LocalBusiness">
 	<header>
 		<nav class="navbar navbar-default" role="navigation">
 		  <div class="container">
@@ -26,7 +26,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="<?= home_url(); ?>"><img src="<?= get_stylesheet_directory_uri(); ?>/images/logo.png" alt="<?= bloginfo('name'); ?>" class="img-responsive"></a>
+		      <a class="navbar-brand" href="<?= home_url(); ?>"><img src="<?= get_stylesheet_directory_uri(); ?>/images/logo.png" alt="<?= bloginfo('name'); ?>" class="img-responsive" itemprop="logo"><meta itemprop="name" content="Alpine Amusement"></a>
 		    </div>
 		    <div id="extra-menu" class="hidden-xs hidden-sm">
 		    	<span>(802) 496-4498</span>

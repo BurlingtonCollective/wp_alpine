@@ -17,7 +17,7 @@ if (have_posts()) :
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-7">
 				<?php while (have_posts()) : the_post(); ?>
-				<article class="post" itemscope itemtype="http://schema.org/LocalBusiness">
+				<article class="post">
 					<div class="logo">
 						<?php the_post_thumbnail('full', array(
 							'class' => 'img-responsive',
