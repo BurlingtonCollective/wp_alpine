@@ -17,15 +17,15 @@ if (have_posts()) :
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-7">
 				<?php while (have_posts()) : the_post(); ?>
-				<article class="post">
+				<article class="post" itemscope itemtype="http://schema.org/LocalBusiness">
 					<div class="logo">
 						<?php the_post_thumbnail('full', array(
 							'class' => 'img-responsive',
 						)); ?>
 					</div>
-					<div class="content">
-						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-						<div class="excerpt">
+					<div class="content" itemprop="review" itemscope itemtype="http://schema.org/Review">
+						<h4><a href="<?php the_permalink(); ?>"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php the_title(); ?></span></span></a></h4>
+						<div class="excerpt" itemprop="reviewBody">
 							<?php the_excerpt(); ?>
 							<a class="more" href="<?php the_permalink(); ?>">See More</a>
 						</div>

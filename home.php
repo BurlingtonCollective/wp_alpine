@@ -22,7 +22,7 @@
 						  	?>
 						    <div class="item <?= ($innerActive) ? 'active' : ''; ?>">
 						    	<p><?php the_title(); echo ' - ' . $category[0]; ?></p>
-						    	<div class="content">
+						    	<div class="content" itemprop="review" itemscope>
 						    		<?php the_excerpt(); ?>
 						    		<a href="<?php the_permalink(); ?>">See More</a>
 						    	</div>
