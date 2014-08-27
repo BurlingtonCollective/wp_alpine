@@ -4,9 +4,9 @@
 			<div class="col-xs-12">
 				<ul class="plain">
 					<li>Alpine Amusement</li>
-					<li>P.O. Box 477, Waitsfield VT 05673</li>
-					<li>Office: 802.496.4498</li>
-					<li>Cell: 802.279.2214</li>
+					<li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">P.O. Box 477</span>, <span itemprop="addressLocality">Waitsfield</span> <span itemprop="addressRegion">VT</span> <span itemprop="postalCode">05673</span></li>
+					<li>Office: <span itemprop="telephone">802.496.4498</span></li>
+					<li>Cell: <span itemprop="telephone">802.279.2214</span></li>
 					<li>Dev: <a href="http://burlingtoncollective.com" target="_blank">Burlington Collective</a></li>
 				</ul>
 			</div>
