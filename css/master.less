@@ -212,30 +212,41 @@ header{
 
 section#new-home-banner{
 	margin-top: -60px;
-	background: #351b60 url(../images/new-banner-bg.jpg) center center repeat-x;
+	background: #351b60 url(../images/new-banner-bg.jpg) center top repeat-x;
 	border: 8px solid @yellow;
 	border-width: 8px 0;
 	color: #fff;
+	h2{
+		margin-top: 30px;
+	}
 	#intro-copy{
+		margin-top: 20px;
 		p{
 			font-size: unit(18/@font-size-base, em);
 			span{
 				color: @yellow;
 			}
+			&:last-of-type{
+				font-size: unit(14/@font-size-base, em);
+			}
 		}
 	}
 	#testimonial-slider{
-		margin-bottom: 40px;
+		margin: 160px 0 20px;
 		.carousel-inner{
 			& > .item{
 				.box-sizing(border-box);
 				width: 100%;
 				padding-right: 240px;
 				min-height: 260px;
+				.content{
+					font-size: unit(20/@font-size-base, em);
+					padding-top: 30px;
+				}
 				.map{
 					position: absolute;
 					right: 0;
-					top:0;
+					top: -20px;
 				}
 				@media(max-width: @screen-sm-max){
 					padding-right: 0;
@@ -268,6 +279,10 @@ section#new-home-banner{
 			}
 		}
 	}
+}
+
+#extra-logos{
+	margin-top: 30px;
 }
 
 section#home-banner{
