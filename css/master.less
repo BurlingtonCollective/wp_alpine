@@ -51,12 +51,30 @@ ul.plain{
 	padding: 0;
 }
 
+#top-nav{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 1;
+	font-size: unit(14/@font-size-base, em);
+	padding: 5px 0;
+	p{
+		margin-bottom: 0;
+		margin-right: 15px;
+	}
+	span{
+		margin-right: 20px;
+	}
+}
+
 header{
+	position: relative;
+	z-index: 2;
 	background: transparent url('../images/chips-top-alt.png') left top no-repeat;
 	.navbar-header{
 		a.navbar-brand{
 			height: auto;
-			max-width: 200px;
 			padding: 0 15px;
 		}
 		.navbar-toggle{
@@ -100,7 +118,7 @@ header{
 			}
 			.navbar-nav:last-child{
 				position: relative;
-				padding-top: 28px;
+				padding-top: 66px;
 				margin-right: 0;
 				& > li{
 					a{
@@ -137,15 +155,15 @@ header{
 							background: transparent;
 						}
 					}
-					&:last-child{
-						a{
-							background: @yellow;
-							margin: 7px 0 7px 8px;
-							padding: 8px 15px;
-							border-radius: 4px;
-							color: @bg-light-green;
-						}
-					}
+					// &:last-child{
+					// 	a{
+					// 		background: @yellow;
+					// 		margin: 7px 0 7px 8px;
+					// 		padding: 8px 15px;
+					// 		border-radius: 4px;
+					// 		color: @bg-light-green;
+					// 	}
+					// }
 				}
 			}
 		}
@@ -189,6 +207,66 @@ header{
 	}
 	@media(max-width: @screen-xs-max){
 		background: transparent;
+	}
+}
+
+section#new-home-banner{
+	margin-top: -60px;
+	background: #351b60 url(../images/new-banner-bg.jpg) center center repeat-x;
+	border: 8px solid @yellow;
+	border-width: 8px 0;
+	color: #fff;
+	#intro-copy{
+		p{
+			font-size: unit(18/@font-size-base, em);
+			span{
+				color: @yellow;
+			}
+		}
+	}
+	#testimonial-slider{
+		margin-bottom: 40px;
+		.carousel-inner{
+			& > .item{
+				.box-sizing(border-box);
+				width: 100%;
+				padding-right: 240px;
+				min-height: 260px;
+				.map{
+					position: absolute;
+					right: 0;
+					top:0;
+				}
+				@media(max-width: @screen-sm-max){
+					padding-right: 0;
+					.map{
+						display: none;
+					}
+				}
+			}
+		}
+		.carousel-control{
+			background: transparent;
+			background-image: none;
+			&.right{
+				right: -15%;
+			}
+			&.left{
+				left: -15%;
+			}
+		}
+		@media(max-width: @screen-sm-max){
+			padding-bottom: 30px;
+			.carousel-control{
+				top: auto;
+				&.right{
+					right: 0;
+				}
+				&.left{
+					left: 0;
+				}
+			}
+		}
 	}
 }
 
