@@ -215,7 +215,7 @@ header{
 
 section#new-home-banner{
 	margin-top: -58px;
-	background: #351b60 url(../images/new-banner-bg.jpg) center top repeat-x;
+	background: #030102 url(../images/new-banner-bg.jpg) center top repeat-x;
 	border: 8px solid @yellow;
 	border-width: 8px 0;
 	color: #fff;
@@ -244,6 +244,10 @@ section#new-home-banner{
 			width: 100%;
 			.carousel-inner{
 				max-height: 344px;
+			}
+			@media(max-width: @screen-sm-max){
+				position: static;
+				margin-top: 20px;
 			}
 		}
 	}
@@ -283,6 +287,7 @@ section#new-home-banner{
 			}
 		}
 		@media(max-width: @screen-sm-max){
+			margin: 0 0 40px;
 			padding-bottom: 30px;
 			.carousel-control{
 				top: auto;
@@ -299,6 +304,9 @@ section#new-home-banner{
 
 #extra-logos{
 	margin-top: 30px;
+	& > div{
+		min-height: 95px;
+	}
 }
 
 section#home-banner{
