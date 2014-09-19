@@ -68,6 +68,9 @@ ul.plain{
 	span{
 		margin-right: 20px;
 	}
+	@media(max-width: @grid-float-breakpoint){
+		display: none;
+	}
 }
 
 header{
@@ -172,6 +175,12 @@ header{
 		}
 		@media(max-width: (@grid-float-breakpoint - 1px)){
 			//mobile nav
+			.navbar-header{
+				.navbar-brand{
+					max-width: 200px;
+					margin-left: 0 !important;
+				}
+			}
 			.navbar-nav:last-child{
 				float: none !important;
 				&>li{
@@ -289,6 +298,9 @@ section#new-home-banner{
 		@media(max-width: @screen-sm-max){
 			margin: 0 0 40px;
 			padding-bottom: 30px;
+			.carousel-inner > .item .content{
+				padding-top: 0;
+			}
 			.carousel-control{
 				top: auto;
 				&.right{
@@ -300,10 +312,13 @@ section#new-home-banner{
 			}
 		}
 	}
+	@media(max-width: @grid-float-breakpoint){
+		margin-top: 20px;
+		#gradient > .vertical(#311b60; #030102);
+	}
 }
 
 #extra-logos{
-	margin-top: 30px;
 	& > div{
 		min-height: 95px;
 	}
@@ -451,7 +466,6 @@ section#intro{
 
 section#home-tertiary{
 	padding-top: 88px;
-	
 }
 
 #featured-images{
