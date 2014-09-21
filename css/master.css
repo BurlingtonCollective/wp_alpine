@@ -6396,6 +6396,13 @@ section#new-home-banner #intro-copy p span {
 section#new-home-banner #intro-copy p:last-of-type {
   font-size: 1em;
 }
+section#new-home-banner #party-types a {
+  color: #fccd48;
+  text-decoration: underline;
+}
+section#new-home-banner #party-types a:hover {
+  color: #fff;
+}
 section#new-home-banner #carousel-wrapper {
   position: relative;
 }
