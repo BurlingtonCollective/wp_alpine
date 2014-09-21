@@ -22,10 +22,10 @@ get_header();
 		</div>
 		<div class="row images">
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/scans/special/1.jpeg">
+				<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/scans/special/2.jpeg">
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/scans/special/2.jpeg">
+				<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/scans/special/1.jpeg">
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
 				<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/scans/special/3.jpeg">

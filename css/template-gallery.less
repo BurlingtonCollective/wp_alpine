@@ -2,6 +2,9 @@ section#gallery{
 	.images > div{
 		min-height: 250px;
 		margin-bottom: 10px;
+		@media(max-width: @screen-md-max){
+			min-height: 200px;
+		}
 	}
 	img{
 		border: 4px solid #fff;
