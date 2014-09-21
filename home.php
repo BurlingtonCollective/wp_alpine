@@ -9,7 +9,7 @@
 		<div class="row" id="intro-copy">
 			<div class="col-xs-12 col-md-6">
 				<p><span>Alpine Amusement</span> &middot; We're a New England based professional Las Vegas Casino Night event &amp; entertainment rental company.  Founded in Vermont, Alpine Amusement has been providing Casino Grade equipment to corporate event planners, non-profit organizations, and personal functions in the New England and northern New York region since 1991.</p>
-				<p>Corporate Parties &middot;  Company Events &middot; Team Building &middot; Fundraisers &middot; Weddings &middot; Holiday Parties &middot; Family Gatherings</p>
+				<p>Corporate Parties &middot;  Company Events &middot; Team Building &middot; Fundraisers &middot; Weddings &middot; Holiday Parties &middot; >Family Gatherings</p>
 				<a href="http://alpineamusement.com/contact-us/" class="btn btn-block btn-primary">Contact Us</a>
 			</div>
 			<div class="col-xs-12 col-md-5 col-md-push-1">
@@ -42,8 +42,11 @@
 					    <div class="item">
 					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/IMG_3823.jpg">
 					    </div>
-					    <div class="item">
+					    <!-- <div class="item">
 					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/maroon-table.jpg">
+					    </div> -->
+					    <div class="item">
+					    	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/marketing/replace-maroon.JPG">
 					    </div>
 					  </div>
 
