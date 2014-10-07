@@ -1,3 +1,12 @@
+<section id="cta-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<a href="/contact-us/" class="btn btn-primary btn-block btn-lg">Contact Us Today!</a>
+			</div>
+		</div>
+	</div>
+</section>
 <footer>
 	<div class="container">
 		<div class="row">

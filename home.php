@@ -9,7 +9,7 @@
 		<div class="row" id="intro-copy">
 			<div class="col-xs-12 col-md-6">
 				<p><span>Alpine Amusement</span> &middot; We're a New England based professional Las Vegas Casino Night event &amp; entertainment rental company.  Founded in Vermont, Alpine Amusement has been providing Casino Grade equipment to corporate event planners, non-profit organizations, and personal functions in the New England and northern New York region since 1991.</p>
-				<p id="party-types"><a href="/gallery/#special-occasions">Weddings</a> &middot; <a href="/gallery/#special-occasions">Civil Unions</a> &middot; <a href="/gallery/#special-occasions">Bar / Bas Mitzvah</a> &middot;  <a href="/gallery/#private-parties">Private Parties</a> &middot; <a href="/gallery/#theme-parties">Theme Parties</a> &middot; <a href="/gallery/#non-profits">Non-profits</a> &middot; <a href="/gallery/#outdoor">Tents / Outdoor Venues</a> &middot; <a href="/gallery/#corporate">Corporate Parties</a> &middot; <a href="/gallery/#corporate">Tradeshows</a></p>
+				<p id="party-types"><a href="/gallery/#special-occasions">Weddings</a> &middot; <a href="/gallery/#special-occasions">Civil Unions</a> &middot; <a href="/gallery/#special-occasions">Bar / Bat Mitzvah</a> &middot;  <a href="/gallery/#private-parties">Private Parties</a> &middot; <a href="/gallery/#theme-parties">Theme Parties</a> &middot; <a href="/gallery/#non-profits">Non-profits</a> &middot; <a href="/gallery/#outdoor">Tents / Outdoor Venues</a> &middot; <a href="/gallery/#corporate">Corporate Parties</a> &middot; <a href="/gallery/#corporate">Tradeshows</a></p>
 				<a href="http://alpineamusement.com/contact-us/" class="btn btn-block btn-primary">Contact Us</a>
 			</div>
 			<div class="col-xs-12 col-md-5 col-md-push-1">

@@ -20,6 +20,7 @@ if(isset($_POST['email'])){
 
 	$name = isset($_POST['name']) ? $_POST['name'] : '';
 	$email = isset($_POST['email']) ? $_POST['email'] : '';
+	$phone = isset($_POST['phone']) ? $_POST['phone'] : '';
 	$date = isset($_POST['date']) ? $_POST['date'] : '';
 	$message = isset($_POST['message']) ? $_POST['message'] : '';
 
@@ -32,10 +33,12 @@ if(isset($_POST['email'])){
 		$messageFieldValue = $message != '' ? wordwrap($message, 70) : '[user didn\'t provide a message]';
 		$nameFieldValue = $name != '' ? $name : '[user didn\'t provide their name]';
 		$dateFieldValue = $date != '' ? $date : '[user didn\'t provide an anticipated date]';
+		$phoneFieldValue = $phone != '' ? $phone : '[user didn\'t provide their phone #]';
 
 		$messageString = "Replying to this email will message your lead directly.\n\n";
 		$messageString .= "Name: ".$nameFieldValue."\n\n";
 		$messageString .= "Email: ".$email."\n\n";
+		$messageString .= "Phone: ".$phone."\n\n";
 		$messageString .= "Date: ".$dateFieldValue."\n\n";
 		$messageString .= "Message: ".$messageFieldValue."\n\n\n";
 		$messageString .= "If you are recieving spam often, contact your friendly neighborhood web developer: zach@burlingtoncollective.com";

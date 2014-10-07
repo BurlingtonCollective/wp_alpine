@@ -6,6 +6,11 @@
 		<input type="text" class="form-control" id="name" name="name" placeholder="Joe Smith">
 	</div>
 	<div class="form-group">
+		<label for="phone">Phone</label>
+		<input type="text" class="form-control" id="phone"  name="phone" placeholder="(555)555-5555
+		">
+	</div>
+	<div class="form-group">
 		<label for="email">Email Address</label>
 		<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com">
 	</div>
@@ -50,6 +55,7 @@
 					data: {
 						name: $('[name="name"]').val(),
 						email: $('[name="email"]').val(),
+						phone: $('[name="phone"]').val(),
 						date: $('[name="date"]').val(),
 						message: $('[name="message"]').val()
 					},
@@ -59,6 +65,7 @@
 							showMessage(true, 'Thanks for contacting us, we\'ll be in touch shortly!');
 							$('[name="name"]').val('');
 							$('[name="email"]').val('');
+							$('[name="phone"]').val('');
 							$('[name="date"]').val('');
 							$('[name="message"]').val('');
 						}else{
