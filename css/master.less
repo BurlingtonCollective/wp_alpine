@@ -256,17 +256,21 @@ section#new-home-banner{
 	#carousel-wrapper{
 		position: relative;
 		#featured-images{
-			max-height: 344px;
+			max-height: 250px; //344
 			position: absolute;
-			top: -70px;
+			top: 0px;
 			left: 0;
 			width: 100%;
 			.carousel-inner{
-				max-height: 344px;
+				max-height: 250px;
 			}
 			@media(max-width: @screen-sm-max){
 				position: static;
 				margin-top: 20px;
+				max-height: 344px;
+				.carousel-inner{
+					max-height: 344px;
+				}
 			}
 		}
 	}
@@ -518,11 +522,13 @@ footer{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	.row{
+		margin-top: 160px;
+	}
 	ul.plain{
 		color: #fff;
 		.opacity(.6);
 		font-size: 12px;
-		margin-top: 160px;
 		a{
 			color: @yellow;
 			&:hover{

@@ -10,7 +10,7 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-3">
 				<ul class="plain">
 					<li>Alpine Amusement</li>
 					<li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">P.O. Box 477</span>, <span itemprop="addressLocality">Waitsfield</span> <span itemprop="addressRegion">VT</span> <span itemprop="postalCode">05673</span></li>
@@ -18,6 +18,9 @@
 					<li>Cell: <span itemprop="telephone">802.279.2214</span></li>
 					<li>Dev: <a href="http://burlingtoncollective.com" target="_blank">Burlington Collective</a></li>
 				</ul>
+			</div>
+			<div class="col-xs-1 col-xs-push-8">
+				<script type="text/javascript" src="http://counter1.statcounterfree.com/private/counter.js?c=1c7d687524cef42c038cea45cbd01c5e"></script>
 			</div>
 		</div>
 	</div>

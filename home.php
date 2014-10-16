@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h2>Casino parties throughout New England</h2>
+				<h2>New England's Premiere Casino Event Company Since 1991</h2>
 			</div>
 		</div>
 		<div class="row" id="intro-copy">
