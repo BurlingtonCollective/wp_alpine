@@ -112,25 +112,47 @@
 	  			<h5 style="text-align: center;margin-top: 30px;">Representative Clients:</h5>
 	  		</div>
 	  	</div>
-	  	<div id="extra-logos" class="row">
-	  		<div class="col-xs-4 col-sm-2">
-	  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-burton-white.png" style="margin: 0 auto;">
-	  		</div>
-	  		<div class="col-xs-4 col-sm-2">
-	  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-aig-white.png" style="margin: 0 auto;">
-	  		</div>
-	  		<div class="col-xs-4 col-sm-2">
-	  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-bcg-white.png" style="margin: 17px auto 0;">
-	  		</div>
-	  		<div class="col-xs-4 col-sm-2">
-	  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-chevy-white.png" style="margin: 13px auto 0;">
-	  		</div>
-	  		<div class="col-xs-4 col-sm-2">
-	  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-amr-white.png" style="margin: 22px auto 0;">
-	  		</div>
-	  		<div class="col-xs-4 col-sm-2">
-	  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-gsk-white.png" style="margin: 0 auto;">
-	  		</div>
+	  	<div id="extra-logos">
+	  		<div class="row">
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-burton-white.png" style="margin: 0 auto;">
+		  		</div>
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-aig-white.png" style="margin: 0 auto;">
+		  		</div>
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-bcg-white.png" style="margin: 17px auto 0;">
+		  		</div>
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-chevy-white.png" style="margin: 13px auto 0;">
+		  		</div>
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-amr-white.png" style="margin: 22px auto 0;">
+		  		</div>
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-gsk-white.png" style="margin: 0 auto;">
+		  		</div>
+		  	</div>
+		  	<div class="row">
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-chad-white.png" style="margin: 50px auto 0;">
+		  		</div>
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-lonza-white.png" style="margin: 55px auto 0;">
+		  		</div>
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-seventh-gen-white.png" style="margin: 36px auto 0;">
+		  		</div>
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/middleburyregular-white.png" style="margin: 37px auto 0;">
+		  		</div>
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-mfia-white.png" style="margin: 0 auto;">
+		  		</div>
+		  		<div class="col-xs-4 col-sm-2">
+		  			<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logos/ko-engelberth-white.png" style="margin: 46px auto 0;">
+		  		</div>
+		  	</div>
 	  	</div>
 	  </div>
 	</div>
