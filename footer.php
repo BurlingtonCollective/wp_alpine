@@ -20,7 +20,7 @@
 				</ul>
 			</div>
 			<div class="col-xs-1 col-xs-push-8">
-				<script type="text/javascript" src="http://counter1.statcounterfree.com/private/counter.js?c=1c7d687524cef42c038cea45cbd01c5e"></script>
+				<!--<script type="text/javascript" src="http://counter1.statcounterfree.com/private/counter.js?c=1c7d687524cef42c038cea45cbd01c5e"></script>-->
 			</div>
 		</div>
 	</div>
