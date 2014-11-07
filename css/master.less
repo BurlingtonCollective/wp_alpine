@@ -17,6 +17,8 @@
 @headings-font-family: 'Fjalla One', 'Helvetica Neue', Helvetica, sans-serif;
 @headings-color: @yellow;
 
+@grid-float-breakpoint: 996px;
+
 html{
 	height: 100%;
 	background: @bg-light-green; /* Old browsers */
@@ -258,7 +260,7 @@ header{
 		padding-top: 40px;
 		min-height: 298px;
 	}
-	@media(max-width: @screen-xs-max){
+	@media(max-width: @grid-float-breakpoint){
 		background: transparent;
 	}
 }
@@ -333,12 +335,12 @@ section#new-home-banner{
 					// top: -20px;
 					margin: 0 auto;
 				}
-				@media(max-width: @screen-sm-max){
-					padding-right: 0;
-					.map{
-						display: none;
-					}
-				}
+				// @media(max-width: @screen-sm-max){
+				// 	padding-right: 0;
+				// 	.map{
+				// 		display: none;
+				// 	}
+				// }
 			}
 		}
 		.carousel-control{

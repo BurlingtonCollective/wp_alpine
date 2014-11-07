@@ -79,14 +79,14 @@
 				  	?>
 				    <div class="item <?= ($innerActive) ? 'active' : ''; ?>">
 				    	<div class="row">
-					  		<div class="col-xs-12 col-sm-9">
+					  		<div class="col-xs-12 col-md-9">
 					  			<h3><?php the_title(); echo ' - ' . $category[0]; ?></h3>
 						      <div class="content">
 						      	<?php the_excerpt(); ?>
 						    		<a href="<?php the_permalink(); ?>">See More</a>
 						      </div>
 					  		</div>
-					  		<div class="hidden-xs col-sm-3">
+					  		<div class="hidden-xs hidden-sm col-md-3">
 					  			<div class="map sprite sprite-<?= $fixed_state; ?>"></div>
 					  		</div>
 					  	</div>
