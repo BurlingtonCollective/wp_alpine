@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<a href="/contact-us/" class="btn btn-primary btn-block btn-lg">Contact Us Today!</a>
+				<a href="http://alpineamusement.com/contact-us/" class="btn btn-primary btn-block btn-lg">Click Here to Book Your Party!</a>
 			</div>
 		</div>
 	</div>

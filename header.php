@@ -17,7 +17,7 @@
 <body itemscope itemtype="http://schema.org/LocalBusiness">
 	<nav id="top-nav">
 		<div class="container">
-			<p class="pull-right"><span>Call (802) 496-4498</span> <a href="http://alpineamusement.com/contact-us/" class="btn btn-primary btn-sm">Contact Us</a></p>
+			<p class="pull-right"><a href="http://alpineamusement.com/contact-us/" class="btn btn-default btn-block">Click here now to book your party or call<span>(802) 496-4498</span></a></p>
 		</div>
 	</nav>
 	<header>

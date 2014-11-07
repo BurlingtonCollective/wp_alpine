@@ -8,7 +8,7 @@
 		</div>
 		<div class="row" id="intro-copy">
 			<div class="col-xs-12 col-md-6">
-				<p><span>Alpine Amusement</span> &middot; We're a New England based professional Las Vegas Casino Night event &amp; entertainment rental company.  Founded in Vermont, Alpine Amusement has been providing Casino Grade equipment to corporate event planners, non-profit organizations, and personal functions in the New England and northern New York region since 1991.</p>
+				<p><span>Alpine Amusement</span> &middot; We're a New England based professional Las Vegas Casino Night event &amp; entertainment rental company.  Founded in Vermont, Alpine Amusement has been providing Casino Grade equipment to corporate event planners, non-profit organizations, and private functions in the Maine, New Hampshire, Vermont, Rhode Island, Massachusetts, Connecticut, and northern New York region since 1991.</p>
 				<p id="party-types"><a href="/gallery/#special-occasions">Weddings</a> &middot; <a href="/gallery/#special-occasions">Civil Unions</a> &middot; <a href="/gallery/#special-occasions">Bar / Bat Mitzvah</a> &middot;  <a href="/gallery/#private-parties">Private Parties</a> &middot; <a href="/gallery/#theme-parties">Theme Parties</a> &middot; <a href="/gallery/#non-profits">Non-profits</a> &middot; <a href="/gallery/#outdoor">Tents / Outdoor Venues</a> &middot; <a href="/gallery/#corporate">Corporate Parties</a> &middot; <a href="/gallery/#corporate">Tradeshows</a></p>
 				<a href="http://alpineamusement.com/contact-us/" class="btn btn-block btn-primary">Contact Us</a>
 			</div>
@@ -78,12 +78,18 @@
 				  	$category = wp_get_post_terms($post->ID, 'testimonial-category', array('fields'=>'names'));
 				  	?>
 				    <div class="item <?= ($innerActive) ? 'active' : ''; ?>">
-				      <h3><?php the_title(); echo ' - ' . $category[0]; ?></h3>
-				      <div class="content">
-				      	<?php the_excerpt(); ?>
-				    		<a href="<?php the_permalink(); ?>">See More</a>
-				      </div>
-				      <div class="map sprite sprite-<?= $fixed_state; ?>"></div>
+				    	<div class="row">
+					  		<div class="col-xs-12 col-sm-9">
+					  			<h3><?php the_title(); echo ' - ' . $category[0]; ?></h3>
+						      <div class="content">
+						      	<?php the_excerpt(); ?>
+						    		<a href="<?php the_permalink(); ?>">See More</a>
+						      </div>
+					  		</div>
+					  		<div class="hidden-xs col-sm-3">
+					  			<div class="map sprite sprite-<?= $fixed_state; ?>"></div>
+					  		</div>
+					  	</div>
 				    </div>
 				    <?php
 				    $innerActive = false;
