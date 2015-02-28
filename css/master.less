@@ -38,6 +38,10 @@ html{
 		min-height: 100%;
 		position: relative;
 		padding-bottom: 338px;
+
+		@media(max-width: @screen-xs-max) {
+			padding-bottom: 0;
+		}
 	}
 }
 
@@ -377,7 +381,8 @@ section#new-home-banner{
 }
 
 #extra-logos{
-	& > div{
+	.row > div{
+		margin-top: 20px;
 		min-height: 95px;
 	}
 }
@@ -580,6 +585,16 @@ footer{
 			&:hover{
 				color: #fff;
 			}
+		}
+	}
+
+	@media(max-width: @screen-xs-max) {
+		position: static;
+		min-height: 0;
+		background: transparent;
+		padding-bottom: 20px;
+		.row {
+			margin-top: 0;
 		}
 	}
 }
